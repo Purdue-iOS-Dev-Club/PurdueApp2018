@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2305A5926CEC6E32E2B7306A /* Pods_PurdueApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E641D97B70FC860FF834F08 /* Pods_PurdueApp.framework */; };
+		C700E1DE2033ACC10013C51E /* DiningCourtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C700E1DD2033ACC10013C51E /* DiningCourtCell.swift */; };
+		C700E1E22033AE120013C51E /* DiningCourtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C700E1E12033AE120013C51E /* DiningCourtViewController.swift */; };
 		C7F4B1E0202139A300FB33BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F4B1DF202139A300FB33BF /* AppDelegate.swift */; };
-		C7F4B1E2202139A300FB33BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F4B1E1202139A300FB33BF /* ViewController.swift */; };
 		C7F4B1E5202139A300FB33BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F4B1E3202139A300FB33BF /* Main.storyboard */; };
 		C7F4B1E7202139A300FB33BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F4B1E6202139A300FB33BF /* Assets.xcassets */; };
 		C7F4B1EA202139A300FB33BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F4B1E8202139A300FB33BF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		256580547FA42F43A5669A65 /* Pods-PurdueApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueApp/Pods-PurdueApp.release.xcconfig"; sourceTree = "<group>"; };
+		3E641D97B70FC860FF834F08 /* Pods_PurdueApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurdueApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B7E848584FCFF48E5F1E88C /* Pods-PurdueApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueApp/Pods-PurdueApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C700E1DD2033ACC10013C51E /* DiningCourtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningCourtCell.swift; sourceTree = "<group>"; };
+		C700E1E12033AE120013C51E /* DiningCourtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningCourtViewController.swift; sourceTree = "<group>"; };
 		C7F4B1DC202139A300FB33BF /* PurdueApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurdueApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F4B1DF202139A300FB33BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7F4B1E1202139A300FB33BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7F4B1E4202139A300FB33BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7F4B1E6202139A300FB33BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7F4B1E9202139A300FB33BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2305A5926CEC6E32E2B7306A /* Pods_PurdueApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22E547155EC1188206B47CC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B7E848584FCFF48E5F1E88C /* Pods-PurdueApp.debug.xcconfig */,
+				256580547FA42F43A5669A65 /* Pods-PurdueApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		326E3E3E3D85A2EB355964A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E641D97B70FC860FF834F08 /* Pods_PurdueApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C7F4B1D3202139A300FB33BF = {
 			isa = PBXGroup;
 			children = (
 				C7F4B1DE202139A300FB33BF /* PurdueApp */,
 				C7F4B1DD202139A300FB33BF /* Products */,
+				22E547155EC1188206B47CC0 /* Pods */,
+				326E3E3E3D85A2EB355964A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +81,12 @@
 			isa = PBXGroup;
 			children = (
 				C7F4B1DF202139A300FB33BF /* AppDelegate.swift */,
-				C7F4B1E1202139A300FB33BF /* ViewController.swift */,
 				C7F4B1E3202139A300FB33BF /* Main.storyboard */,
 				C7F4B1E6202139A300FB33BF /* Assets.xcassets */,
 				C7F4B1E8202139A300FB33BF /* LaunchScreen.storyboard */,
 				C7F4B1EB202139A300FB33BF /* Info.plist */,
+				C700E1DD2033ACC10013C51E /* DiningCourtCell.swift */,
+				C700E1E12033AE120013C51E /* DiningCourtViewController.swift */,
 			);
 			path = PurdueApp;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7F4B1EE202139A300FB33BF /* Build configuration list for PBXNativeTarget "PurdueApp" */;
 			buildPhases = (
+				C90841F7508592D55F1408A5 /* [CP] Check Pods Manifest.lock */,
 				C7F4B1D8202139A300FB33BF /* Sources */,
 				C7F4B1D9202139A300FB33BF /* Frameworks */,
 				C7F4B1DA202139A300FB33BF /* Resources */,
+				DE7836EC504EF69C91D2A5C1 /* [CP] Embed Pods Frameworks */,
+				A5EE6135B136676233310E25 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +161,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A5EE6135B136676233310E25 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurdueApp/Pods-PurdueApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C90841F7508592D55F1408A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PurdueApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE7836EC504EF69C91D2A5C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PurdueApp/Pods-PurdueApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SPTinderView/SPTinderView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SPTinderView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurdueApp/Pods-PurdueApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C7F4B1D8202139A300FB33BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7F4B1E2202139A300FB33BF /* ViewController.swift in Sources */,
+				C700E1DE2033ACC10013C51E /* DiningCourtCell.swift in Sources */,
+				C700E1E22033AE120013C51E /* DiningCourtViewController.swift in Sources */,
 				C7F4B1E0202139A300FB33BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +357,7 @@
 		};
 		C7F4B1EF202139A300FB33BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B7E848584FCFF48E5F1E88C /* Pods-PurdueApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +373,7 @@
 		};
 		C7F4B1F0202139A300FB33BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 256580547FA42F43A5669A65 /* Pods-PurdueApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
