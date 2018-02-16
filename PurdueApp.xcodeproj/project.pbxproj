@@ -10,6 +10,12 @@
 		2305A5926CEC6E32E2B7306A /* Pods_PurdueApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E641D97B70FC860FF834F08 /* Pods_PurdueApp.framework */; };
 		C700E1DE2033ACC10013C51E /* DiningCourtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C700E1DD2033ACC10013C51E /* DiningCourtCell.swift */; };
 		C700E1E22033AE120013C51E /* DiningCourtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C700E1E12033AE120013C51E /* DiningCourtViewController.swift */; };
+		C79E3B5A20379228007F144D /* SelectedCourtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E3B5920379228007F144D /* SelectedCourtViewController.swift */; };
+		C79E3B5C20379377007F144D /* DiningService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E3B5B20379377007F144D /* DiningService.swift */; };
+		C79E3B6220379A19007F144D /* DiningCourt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E3B6120379A19007F144D /* DiningCourt.swift */; };
+		C79E3B6420379A23007F144D /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E3B6320379A23007F144D /* Meal.swift */; };
+		C79E3B6620379A2C007F144D /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E3B6520379A2C007F144D /* Station.swift */; };
+		C79E3B6820379A35007F144D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E3B6720379A35007F144D /* Item.swift */; };
 		C7F4B1E0202139A300FB33BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F4B1DF202139A300FB33BF /* AppDelegate.swift */; };
 		C7F4B1E5202139A300FB33BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F4B1E3202139A300FB33BF /* Main.storyboard */; };
 		C7F4B1E7202139A300FB33BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F4B1E6202139A300FB33BF /* Assets.xcassets */; };
@@ -22,6 +28,12 @@
 		9B7E848584FCFF48E5F1E88C /* Pods-PurdueApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurdueApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PurdueApp/Pods-PurdueApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C700E1DD2033ACC10013C51E /* DiningCourtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningCourtCell.swift; sourceTree = "<group>"; };
 		C700E1E12033AE120013C51E /* DiningCourtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningCourtViewController.swift; sourceTree = "<group>"; };
+		C79E3B5920379228007F144D /* SelectedCourtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCourtViewController.swift; sourceTree = "<group>"; };
+		C79E3B5B20379377007F144D /* DiningService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningService.swift; sourceTree = "<group>"; };
+		C79E3B6120379A19007F144D /* DiningCourt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningCourt.swift; sourceTree = "<group>"; };
+		C79E3B6320379A23007F144D /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		C79E3B6520379A2C007F144D /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		C79E3B6720379A35007F144D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C7F4B1DC202139A300FB33BF /* PurdueApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurdueApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F4B1DF202139A300FB33BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7F4B1E4202139A300FB33BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +71,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C79E3B5D2037943A007F144D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C700E1E12033AE120013C51E /* DiningCourtViewController.swift */,
+				C79E3B5920379228007F144D /* SelectedCourtViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C79E3B5E20379440007F144D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C79E3B6120379A19007F144D /* DiningCourt.swift */,
+				C79E3B6320379A23007F144D /* Meal.swift */,
+				C79E3B6520379A2C007F144D /* Station.swift */,
+				C79E3B6720379A35007F144D /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C79E3B5F2037944A007F144D /* Dining */ = {
+			isa = PBXGroup;
+			children = (
+				C79E3B5B20379377007F144D /* DiningService.swift */,
+				C79E3B6020379478007F144D /* Views */,
+				C79E3B5E20379440007F144D /* Models */,
+				C79E3B5D2037943A007F144D /* Controllers */,
+			);
+			path = Dining;
+			sourceTree = "<group>";
+		};
+		C79E3B6020379478007F144D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C700E1DD2033ACC10013C51E /* DiningCourtCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C7F4B1D3202139A300FB33BF = {
 			isa = PBXGroup;
 			children = (
@@ -80,13 +131,12 @@
 		C7F4B1DE202139A300FB33BF /* PurdueApp */ = {
 			isa = PBXGroup;
 			children = (
+				C79E3B5F2037944A007F144D /* Dining */,
 				C7F4B1DF202139A300FB33BF /* AppDelegate.swift */,
 				C7F4B1E3202139A300FB33BF /* Main.storyboard */,
 				C7F4B1E6202139A300FB33BF /* Assets.xcassets */,
 				C7F4B1E8202139A300FB33BF /* LaunchScreen.storyboard */,
 				C7F4B1EB202139A300FB33BF /* Info.plist */,
-				C700E1DD2033ACC10013C51E /* DiningCourtCell.swift */,
-				C700E1E12033AE120013C51E /* DiningCourtViewController.swift */,
 			);
 			path = PurdueApp;
 			sourceTree = "<group>";
@@ -221,8 +271,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C700E1DE2033ACC10013C51E /* DiningCourtCell.swift in Sources */,
+				C79E3B6820379A35007F144D /* Item.swift in Sources */,
 				C700E1E22033AE120013C51E /* DiningCourtViewController.swift in Sources */,
+				C79E3B6620379A2C007F144D /* Station.swift in Sources */,
+				C79E3B6420379A23007F144D /* Meal.swift in Sources */,
+				C79E3B6220379A19007F144D /* DiningCourt.swift in Sources */,
 				C7F4B1E0202139A300FB33BF /* AppDelegate.swift in Sources */,
+				C79E3B5C20379377007F144D /* DiningService.swift in Sources */,
+				C79E3B5A20379228007F144D /* SelectedCourtViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

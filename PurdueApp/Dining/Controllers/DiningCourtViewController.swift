@@ -26,14 +26,18 @@ class DiningCourtViewController: UIViewController {
         diningView.backgroundColor = UIColor.white
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let index = sender as! Int
+        
+        let vc = segue.destination as! SelectedCourtViewController
+        vc.name = names[index]
     }
 }
 
 extension DiningCourtViewController: SPTinderViewDataSource, SPTinderViewDelegate {
     func tinderView(_ view: SPTinderView, didSelectCellAt index: Int) {
+        performSegue(withIdentifier: "courtSegue", sender: index)
+        
         return
     }
     
@@ -45,6 +49,7 @@ extension DiningCourtViewController: SPTinderViewDataSource, SPTinderViewDelegat
         if let cell = diningView.dequeueReusableCellWithIdentifier("DiningCell") as? DiningCourtCell {
             cell.titleLabel.text = names[index]
             cell.imageView.image = UIImage(named: names[index])
+            cell.layer.backgroundColor = UIColor.white.cgColor
             return cell
         }
         return nil
