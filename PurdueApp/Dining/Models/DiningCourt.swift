@@ -8,6 +8,21 @@
 
 import UIKit
 
-class DiningCourt: NSObject {
-
+struct DiningCourt {
+    
+    let location: String
+    var date: Date
+    var dateString: String
+    var meals: [Meal]
+    
+    init(diningCourtData: [String: Any]) {
+        location = diningCourtData["Location"] as! String
+        dateString = diningCourtData["Date"] as! String
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        date = dateFormatter.date(from: dateString)!
+        let mealsArr = diningCourtData["Meals"] as! [[String: Any]]
+        meals = Meal.parseMeals(mealsJSON: mealsArr)
+        print(meals[0].name)
+    }
 }

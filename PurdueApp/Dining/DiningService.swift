@@ -26,7 +26,14 @@ class DiningService {
         urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         let task = session.dataTask(with: urlRequest) { (data, response, error) in
+            guard let data = data else {
+                
+                return
+            }
             
+            let diningJSON = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+            
+            let diningCourt = DiningCourt(diningCourtData: diningJSON)
         }
         
         task.resume()

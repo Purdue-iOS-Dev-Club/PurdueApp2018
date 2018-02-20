@@ -21,7 +21,7 @@ class SelectedCourtViewController: UIViewController {
 
     func loadDiningCourtInfo() {
         DiningService.sharedInstance.getTodayMenu(name: name) {
-            print("Request for food finished")
+            
         }
     }
 
