@@ -11,6 +11,14 @@ import UIKit
 class SelectedCourtViewController: UIViewController {
 
     var name: String!
+    var diningCourt: DiningCourt? {
+        didSet {
+            DispatchQueue.main.async {
+                
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,8 +28,8 @@ class SelectedCourtViewController: UIViewController {
     }
 
     func loadDiningCourtInfo() {
-        DiningService.sharedInstance.getTodayMenu(name: name) {
-            
+        DiningService.sharedInstance.getTodayMenu(name: name) {diningCount in
+            self.diningCourt = diningCount
         }
     }
 

@@ -16,7 +16,7 @@ class DiningService {
     let baseURL = "https://api.hfs.purdue.edu/menus/v2/"
     let session = URLSession(configuration: .default)
     
-    func getTodayMenu(name: String, success: @escaping ()->()) {
+    func getTodayMenu(name: String, success: @escaping (DiningCourt)->()) {
         dateFormatter.dateFormat = "YYYY-MM-dd"
         
         let url = URL(string: "\(baseURL)locations/\(name)/\(dateFormatter.string(from: currDate))")!
@@ -34,6 +34,8 @@ class DiningService {
             let diningJSON = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
             
             let diningCourt = DiningCourt(diningCourtData: diningJSON)
+            
+            success(diningCourt)
         }
         
         task.resume()

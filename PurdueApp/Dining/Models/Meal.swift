@@ -22,6 +22,7 @@ struct Meal {
         let hours = mealJSON["Hours"] as! [String: Any]
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm:ss"
+        dateFormatter.timeZone = TimeZone(abbreviation: "GMT")
         startTime = dateFormatter.date(from: hours["StartTime"] as! String)!
         endTime = dateFormatter.date(from: hours["EndTime"] as! String)!
     }
